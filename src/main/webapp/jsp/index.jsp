@@ -26,7 +26,7 @@
 	<jsp:include page="TopNav.jsp" flush="true" />
 	
 	<main>
-		<section class="py-5 text-center bg-dark" >
+		<section class=" d-block py-5 text-center bg-dark" >
 			<div class="row py-lg-5">
 				<div class="col-lg-6 col-md-8 mx-auto">
 					<h1 class="fw-light">YouTunes</h1>
@@ -34,13 +34,14 @@
 					<p>
 						<a href="store?action=newAlbum" class="btn btn-primary my-2">New Music Album</a>
 					</p>
+					<img alt="" src="/youtunes6/images/music-hero.svg" class="d-block">
 				</div>
 			</div>
 		</section>
 
 		<div class="album py-5 bg-light">
 			<div class="container">
-			<h1 class="fw-medium text-light" >What's New </h1>
+			<h1 class="fw-medium text-dark text-center" >What's New </h1>
 				<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 				
 					<%
@@ -52,22 +53,22 @@
 					%>
 					
 					<div class="col">
-						<div class="card shadow-sm">
+						<div class="shadow-sm">
 							<img src="/youtunes6/images/<%=album.getImgUrl()%>" height="400" class="card-img-top" />
 
-							<div class="card-body">
-								<p class="card-text">
+							<div class="card-body bg-primary">
+								<p class="card-text text-light">
 									<span><%=album.getTitle()%></span>
 									<br />
-									<small class="text-muted"><em><%=album.getGenre()%></em></small>
+									<small class="text-dark"><em><%=album.getGenre()%></em></small>
 								</p>
 								
 								<div class="d-flex justify-content-between align-items-center">
 									<div class="btn-group">
-										<a href="store?action=albumDetails&albumId=<%=album.getAlbumId()%>" class="btn btn-sm btn-outline-secondary">Edit</a>
-										<a href="store?action=deleteAlbum&albumId=<%=album.getAlbumId()%>" class="btn btn-sm btn-outline-secondary">Delete</a>
+										<a href="store?action=albumDetails&albumId=<%=album.getAlbumId()%>" class="btn btn-sm btn-outline-secondary bg-light">Edit</a>
+										<a href="store?action=deleteAlbum&albumId=<%=album.getAlbumId()%>" class="btn btn-sm btn-outline-secondary bg-dark">Delete</a>
 									</div>
-									<small class="text-muted">$<%=album.getPrice()%></small>
+									<small class="text-dark">$<%=album.getPrice()%></small>
 								</div>
 							</div>
 						</div>
