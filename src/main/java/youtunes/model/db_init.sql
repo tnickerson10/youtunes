@@ -1,9 +1,4 @@
-/*
-    Title: db_init.sql
-    Author: Professor Krasso
-    Date: 25 June 2021
-    Description: youtunes database initialization script.
-*/
+
 
 -- drop test user if exists 
 DROP USER IF EXISTS 'youtunes_user'@'localhost';

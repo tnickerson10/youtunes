@@ -1,9 +1,6 @@
 package youtunes.model;
 
-/**
- * Sprint 3
- * @author RK
- */
+
 public class Album 
 {
 	private long albumId; 

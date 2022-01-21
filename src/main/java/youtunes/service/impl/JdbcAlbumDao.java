@@ -11,10 +11,7 @@ import youtunes.model.Album;
 import youtunes.service.JdbcManager;
 import youtunes.service.dao.AlbumDao;
 
-/**
- * Sprint 3
- * @author RK
- */
+
 public class JdbcAlbumDao implements AlbumDao {
 
 	JdbcManager db; 
