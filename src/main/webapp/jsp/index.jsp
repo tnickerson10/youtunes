@@ -26,7 +26,7 @@
 	<jsp:include page="TopNav.jsp" flush="true" />
 	
 	<main>
-		<section class="py-5 text-center container">
+		<section class="py-5 text-center bg-dark" >
 			<div class="row py-lg-5">
 				<div class="col-lg-6 col-md-8 mx-auto">
 					<h1 class="fw-light">YouTunes</h1>
@@ -38,7 +38,7 @@
 			</div>
 		</section>
 
-		<div class="album py-5 bg-dark">
+		<div class="album py-5 bg-light">
 			<div class="container">
 			<h1 class="fw-medium text-light" >What's New </h1>
 				<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
