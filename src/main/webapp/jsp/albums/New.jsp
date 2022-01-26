@@ -64,6 +64,10 @@
 				<option value="Jazz">Jazz</option>
 				<option value="Blues">Blues</option>
 				<option value="Rock">Rock</option>
+				<option value="Hip-Hop">Hip-Hop</option>
+				<option value="Rap">Rap</option>
+				<option value="Country">Country</option>
+				<option value="Folk">Folk</option>
 			</select>
 		</div>
 		

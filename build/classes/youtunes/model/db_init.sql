@@ -46,34 +46,40 @@ CREATE TABLE album (
 
 -- insert artist statements 
 INSERT INTO artist(first_name, last_name)
-	VALUES('Ludwig van', 'Beethoven');
+	VALUES('Chris', 'Stapleton');
 
 INSERT INTO artist(first_name, last_name)
-	VALUES('Johann', 'Bach');
+	VALUES('Kid', 'Cudi');
 	
 INSERT INTO artist(first_name, last_name)
-	VALUES('Wolfgang', 'Mozart');
+	VALUES('Kanye', 'West');
 	
 INSERT INTO artist(first_name, last_name)
-	VALUES('Johannes', 'Brahms');
+	VALUES('Fleetwood', 'Mac');
 	
 INSERT INTO artist(first_name, last_name)
-	VALUES('Richard', 'Wagner');
+	VALUES('Pearl', 'Jam');
+
+INSERT INTO artist(first_name, last_name)
+	VALUES('Notorious', 'B.I.G.');
 	
 	
 -- insert album statements
 INSERT INTO album(title, price, genre, img_url, artist_id)
-	VALUES('Beethoven Complete Edition', 119.99, 'Classical', '', (SELECT artist_id FROM artist WHERE last_name = 'Beethoven'));
+	VALUES('Traveller', 19.99, 'Country', 'stapelton.jpeg', (SELECT artist_id FROM artist WHERE last_name = 'Stapleton'));
 	
 INSERT INTO album(title, price, genre, img_url, artist_id)
-	VALUES('J.S Bach Complete Edition', 141.59, 'Classical', '', (SELECT artist_id FROM artist WHERE last_name = 'Bach'));
+	VALUES('Man On The Moon: The End Of The Day', 14.59, 'Rap', 'cudi.jpeg', (SELECT artist_id FROM artist WHERE last_name = 'Cudi'));
 	
 INSERT INTO album(title, price, genre, img_url, artist_id)
-	VALUES('Mozart: The Symphonies', 32.18, 'Classical', '', (SELECT artist_id FROM artist WHERE last_name = 'Mozart'));
+	VALUES('Donda', 29.18, 'Rap', 'west.jpeg', (SELECT artist_id FROM artist WHERE last_name = 'West'));
 	
 INSERT INTO album(title, price, genre, img_url, artist_id)
-	VALUES('Brahms: Symphony 1 In C Minor', 19.90, 'Classical', '', (SELECT artist_id FROM artist WHERE last_name = 'Brahms'));
+	VALUES('The White Album', 29.90, 'Rock', 'mac.jpeg', (SELECT artist_id FROM artist WHERE last_name = 'Mac'));
 	
 INSERT INTO album(title, price, genre, img_url, artist_id)
-	VALUES('Best of Wagner', 10.89, 'Classical', '', (SELECT artist_id FROM artist WHERE last_name = 'Wagner'));
+	VALUES('Ten', 10.89, 'Rock', 'jam.jpeg', (SELECT artist_id FROM artist WHERE last_name = 'Jam'));
+	
+INSERT INTO album(title, price, genre, img_url, artist_id)
+	VALUES('Greatest Hits', 16.89, 'Rap', 'biggie.jpeg', (SELECT artist_id FROM artist WHERE last_name = 'B.I.G.'));
 	
