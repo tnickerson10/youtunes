@@ -26,22 +26,26 @@
 	<jsp:include page="TopNav.jsp" flush="true" />
 	
 	<main>
-		<section class=" d-block py-5 text-center bg-dark" >
-			<div class="row py-lg-5">
-				<div class="col-lg-6 col-md-8 mx-auto">
-					<h1 class="fw-light">YouTunes</h1>
-					<p class="lead text-muted">Re-Discover Music Your Way.</p>
-					<p>
-						<a href="store?action=newAlbum" class="btn btn-primary my-2">New Music Album</a>
-					</p>
-					<img alt="" src="/youtunes6/images/music-hero.svg" class="d-block">
+		<section class="p-5 text-center text-light bg-dark" >
+			<div class="container">
+				<div class="d-sm-flex align-items-center ml-3">
+					<div>
+						<h1 class="fw-light">You<span class="text-warning">Tunes</span></h1>
+						<p class="text-muted">RE-DISCOVER MUSIC YOUR WAY</p>
+						
+						<a href="store?action=newAlbum" class="btn btn-primary my-2">Add An Album</a>
+						
+					</div>
+						<img alt="" src="/youtunes6/images/music-hero.svg" class="img-fluid w-50 ms-5"/>
+					
+					
 				</div>
 			</div>
 		</section>
 
 		<div class="album py-5 bg-light">
 			<div class="container">
-			<h1 class="fw-medium text-dark text-center" >What's New </h1>
+			<h1 class="fw-medium text-dark text-left" >YOUR JAMS </h1>
 				<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 				
 					<%
@@ -53,8 +57,8 @@
 					%>
 					
 					<div class="col">
-						<div class="shadow-sm">
-							<img src="/youtunes6/images/<%=album.getImgUrl()%>" height="400" class="card-img-top" />
+						<div class="shadow-md">
+							<img src="/youtunes6/images/<%=album.getImgUrl()%>" height="350" class="card-img-top" />
 
 							<div class="card-body bg-primary">
 								<p class="card-text text-light">

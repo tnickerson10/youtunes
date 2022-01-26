@@ -4,16 +4,15 @@
 
 <% 
 	int year = Calendar.getInstance().get(Calendar.YEAR);
-	String appName = "YouTunes";
-	String courseName = "CSD 460";
+	
 %>
-<footer class="text-muted py-5">
+<footer class="text-muted py-5 text-center text-warning bg-dark">
 	<div class="container">
 		<p class="float-end mb-1">
 			<a href="#">Back to top</a>
 		</p>
 		<p>
-			&copy; <%=year%> - <%=courseName%> (<%=appName%>) | <a href="https://www.bellevue.ed" target="_blank">Bellevue University</a>
+			&copy; <%=year%> -  You<span class="text-warning">Tunes</span> 
 		</p>
 	</div>
 </footer>
