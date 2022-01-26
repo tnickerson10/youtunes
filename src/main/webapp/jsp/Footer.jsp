@@ -17,8 +17,16 @@
 		<p class="float-end mb-1">
 			<a href="#"> <i class="bi bi-arrow-up-circle text-lg text-primary"></i></a>
 		</p>
-		<p>
-			&copy; <%=year%> -  You<span class="text-warning">Tunes</span> 
-		</p>
+		
+			<p class="px-3 d-inline ms-3">
+				<i class="bi bi-facebook"></i>
+				<i class="bi bi-instagram"></i>
+				<i class="bi bi-linkedin"></i>
+				<i class="bi bi-spotify"></i>
+			</p>
+			<p class="px-3 d-inline">&copy; <%=year%> -  You<span class="text-warning">Tunes</span> </p>
+		
+		
+		
 	</div>
 </footer>

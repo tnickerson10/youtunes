@@ -29,17 +29,21 @@
 <section class="p-5 text-center text-light bg-dark" >
 			<div class="container">
 				<div class="d-sm-flex text-left align-items-center ml-3">
-					<div class="text-left">
-						<h1 class="fw-light">Contact <span class="text-warning">Us</span></h1>
+					<div class="text-left w-50">
+						<h1 class="fw-light py-5">Contact <span class="text-warning">Us</span></h1>
 						<i class="bi bi-telephone-forward-fill text-lg text-warning"> Phone</i>
-						<p>
+						<p class="py-1">
 			        		555-555-5555
 			      		</p>
 			      		<i class="bi bi-envelope-check-fill text-lg text-warning"> E-mail</i>
-						<p>
+						<p class="py-1">
 			        		youtunes@jamout.com
 			      		</p>
-						
+						<i class="bi bi-house-fill text-lg text-warning"> Address</i>
+						<p class="py-1">
+			        		1234 Rockin Dr. Somewhere, Someplace 8675309
+			      		</p>
+			      		
 						
 						
 					</div>
