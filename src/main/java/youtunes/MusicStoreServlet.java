@@ -14,35 +14,25 @@ import youtunes.model.Artist;
 import youtunes.service.impl.JdbcAlbumDao;
 import youtunes.service.impl.JdbcArtistDao;
 
-/**
- * Servlet implementation class MusicStoreServlet
- */
+
 @WebServlet(name = "MusicStoreServlet", urlPatterns = { "/store/*" })
 public class MusicStoreServlet extends HttpServlet
 {
 	private static final long serialVersionUID = 1L;
 
-	/**
-	 * @see HttpServlet#HttpServlet()
-	 */
+	
 	public MusicStoreServlet() {
 		super();
-		// TODO Auto-generated constructor stub
+		
 	}
 
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
-	 *      response)
-	 */
+	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		doPost(request, response);
 	}
 
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
-	 *      response)
-	 */
+	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException 
 	{
@@ -171,7 +161,7 @@ public class MusicStoreServlet extends HttpServlet
 		albumDao.add(newAlbum);
 		
 		System.out.println(newAlbum.toString());
-		// System.out.println(String.format("Album{title=%s, price=%s, genre=%s, artistId=%s}", title, price, genre, artistId));
+		
 	}
 	
 	private void updateAlbum(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
