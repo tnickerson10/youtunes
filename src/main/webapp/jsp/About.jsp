@@ -17,35 +17,34 @@
 <body>
 <jsp:include page="TopNav.jsp" flush="true" />
 
-<div class="container py-5 width-35">
-	
-	<div class="row">
-		<div class="col-12">
-			<h3 class="text-center">Wolfgang Amadeus Mozart</h3>
-		</div>
-	</div>
-	
-	<br />
-	<div class="row">
-		<div class="col-4">
-			<img src="/youtunes6/images/youtunes-about.png" />
-		</div>
-		
-		<div class="col-8">
-			<p>
-        		An Austrian composer of the Classical period, Wolfgang Amadeus Mozart is widely recognized as one of the greatest composers of Western music.
-       			He is the only composer to write and excel in all of the musical genres of his time.
-        		Rumored to have had the ability to play music at age three and to write music at age five, Mozart began his career as a child prodigy.
-        		Notable compositions include The Marriage of Figaro, Elvira Madigan, and Clarinet Quintet in A Major, K 581. 
-       			<em class="apa-reference"><a href="https://www.britannica.com/list/10-classical-music-composers-to-know" target="_blank">Source</a></em>
-      		</p>
-		</div>
-	</div>
-
-</div>
+<section class="p-5 text-center text-light bg-dark" >
+			<div class="container">
+				<div class="d-sm-flex text-left align-items-center ml-3">
+					<div class="text-left">
+						<h1 class="fw-light">You<span class="text-warning">Tunes</span></h1>
+						<p class="text-muted">Who We Are</p>
+						<p>
+			        		YouTunes is a multi-platform web application that is one of the fastest-rising downloads in all of social media. 
+			        		Multiple artists have turned to YouTunes as a platform for releasing their newest material with a complete artist-owned 
+			        		purchasing model. Users see YouTunes as the first stop to find out announcements, sampler tracks and build-your-own 
+			        		music bundles for their favorite artists, that they can easily take with them on-the-go by storing those bundles in 
+			        		the cloud, or have them downloaded to their favorite device.
+			      		</p>
+						
+						<a href="store?action=newAlbum" class="btn btn-primary my-2">Add An Album</a>
+						
+					</div>
+						<img alt="" src="/youtunes6/images/about.svg" class="img-fluid w-50 ms-5"/>
+					
+					
+				</div>
+			</div>
+		</section>
 
 
-<jsp:include page="ScriptFooter.jsp" flush="true" />
+
+
+<jsp:include page="Footer.jsp" flush="true" />
 
 </body>
 </html>

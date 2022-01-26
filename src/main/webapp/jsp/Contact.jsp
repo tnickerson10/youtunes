@@ -13,9 +13,9 @@
 	crossorigin="anonymous">
 	
 <link 
- 	rel="stylesheet" 
- 	href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" 
+ 
+    rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" 
+    integrity="sha384-EvBWSlnoFgZlXJvpzS+MAUEjvN7+gcCwH+qh7GRFOGgZO0PuwOFro7qPOJnLfe7l" 
     crossorigin="anonymous">
     
 <link rel="stylesheet" href="/youtunes/css/site.css" type="text/css" />
@@ -26,62 +26,34 @@
 <body>
 <jsp:include page="TopNav.jsp" flush="true" />
 
-<!-- start of container -->
-<div class="container py-5 width-35">
-	<div class="row">
-		<div class="col-12 text-center">
-			<h3>Welcome to the contact page.</h3>
-		</div>
-	</div>
-	
-	<br /><br />
-	
-	<!--  start of the row -->
-	<div class="row">
-		<!--  start of the six column -->
-		<div class="col-6">
-			<div class="row text-center">
-				<div class="col-12">
-					<h1><i class="fas fa-location-arrow text-secondary"></i></h1>
+<section class="p-5 text-center text-light bg-dark" >
+			<div class="container">
+				<div class="d-sm-flex text-left align-items-center ml-3">
+					<div class="text-left">
+						<h1 class="fw-light">Contact <span class="text-warning">Us</span></h1>
+						<i class="bi bi-telephone-forward-fill text-lg text-warning"> Phone</i>
+						<p>
+			        		555-555-5555
+			      		</p>
+			      		<i class="bi bi-envelope-check-fill text-lg text-warning"> E-mail</i>
+						<p>
+			        		youtunes@jamout.com
+			      		</p>
+						
+						
+						
+					</div>
+						<img alt="" src="/youtunes6/images/contact.svg" class="img-fluid w-75 ms-5"/>
+					
+					
 				</div>
 			</div>
-			
-			<div class="row text-center">
-				<div class="col-12">
-					<ul class="list-group">
-						<li class="list-group-item border-0">1000 Galvin Road South</li>
-						<li class="list-group-item border-0">Bellevue, Nebraska 68005</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<!-- end of six column -->
-		
-		<!-- start of the six column -->
-		<div class="col-6">
-			<div class="row text-center">
-				<div class="col-12">
-					<h1><i class="fas fa-phone text-secondary"></i></h1>
-				</div>
-			</div>
-			
-			<div class="row text-center">
-				<div class="col-12">
-					<ul class="list-group">
-						<li class="list-group-item border-0">Direct: 555.555.5555</li>
-						<li class="list-group-item border-0">Toll-free: 1.800.555.5555</li>
-						<li class="list-group-item border-0">Fax: 555.555.5555</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<!-- end of six column -->
-	</div>
-	<!-- end of the row -->
-</div>
-<!-- end of container -->
+		</section>
 
-<jsp:include page="ScriptFooter.jsp" flush="true" />
+
+
+<jsp:include page="Footer.jsp" flush="true" />
+
 
 </body>
 </html>
