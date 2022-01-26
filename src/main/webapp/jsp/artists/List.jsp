@@ -30,7 +30,7 @@
 		<br />
 		
 		<p class="text-center">
-			<a href="store?action=newArtist" class="btn btn-outline-secondary text-center w-50">New Artist</a>
+			<a href="store?action=newArtist" class="btn btn-warning text-center text-dark w-50">Add New Artist</a>
 		</p>
 		
 		
@@ -62,7 +62,7 @@
 							<td><%=artist.getLastName()%></td>
 							<td>
 								<a href="store?action=artistDetails&artistId=<%=artist.getArtistId()%>" class="link">Edit</a> |
-								<a href="store?action=deleteArtist&artistId=<%=artist.getArtistId() %>" class="link">Delete</a>
+								<a href="store?action=deleteArtist&artistId=<%=artist.getArtistId() %>" class="link text-danger">Delete</a>
 							</td>
 						</tr>
 				<% } %>
