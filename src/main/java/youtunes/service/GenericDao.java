@@ -8,6 +8,7 @@ public interface GenericDao<E, K>
 	
 	List<E> list(); // read 
 	
+	
 	E find(K key); // read 
 	
 	void update (E entity); // update

@@ -6,3 +6,5 @@ import youtunes.service.GenericDao;
 public interface ArtistDao extends GenericDao<Artist, Long> {
 
 }
+
+

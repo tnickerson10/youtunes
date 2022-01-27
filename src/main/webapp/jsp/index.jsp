@@ -2,11 +2,15 @@
 	pageEncoding="UTF-8"%>
 
 <!-- Sprint 3 -->
+
+<%@page import="youtunes.model.Album"%>
+<%@page import="youtunes.model.Artist"%>
+<%@page import="java.util.ArrayList"%>
 <%@page import="java.util.List"%>
 <%@page import="java.util.Iterator"%>
-<%@page import="youtunes.model.Album"%>
 
 <jsp:useBean id="albumDao" scope="application" class="youtunes.service.impl.JdbcAlbumDao" />
+
 
 
 <!DOCTYPE html>
@@ -14,7 +18,8 @@
 <head>
 <meta charset="UTF-8">
 <title>YouTunes | Welcome</title>
-<!--  Bootstrap StyleSheet CDN -->
+
+<!--  Bootstrap CDN -->
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
 	rel="stylesheet"
@@ -49,11 +54,15 @@
 				<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 				
 					<%
+					
 						List<Album> albums = albumDao.list();
 						Iterator<Album> iterator = albums.iterator();
+						
+						
 						while (iterator.hasNext())
 						{
-							Album album = (Album)iterator.next();
+							Album album = (Album)iterator.next();		
+							
 					%>
 					
 					<div class="col">
@@ -62,6 +71,7 @@
 
 							<div class="card-body bg-warning">
 								<p class="card-text text-light">
+									
 									<span><%=album.getTitle()%></span>
 									<br />
 									<small class="text-dark"><em><%=album.getGenre()%></em></small>
@@ -83,10 +93,10 @@
 		</div>
 	</main>
 
-	<!-- Page footer -->
+	<!-- footer -->
 	<jsp:include page="Footer.jsp" flush="true" />
 	
-	<!-- Bootstrap JavaScript  -->
+	
 	<jsp:include page="ScriptFooter.jsp" flush="true" />
 </body>
 </html>
