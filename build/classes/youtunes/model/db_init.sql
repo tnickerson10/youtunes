@@ -66,20 +66,20 @@ INSERT INTO artist(first_name, last_name)
 	
 -- insert album statements
 INSERT INTO album(title, price, genre, img_url, artist_id)
-	VALUES('Traveller', 19.99, 'Country', 'stapelton.jpeg', (SELECT artist_id FROM artist WHERE last_name = 'Stapleton'));
+	VALUES('Chris Stapleton: Traveller', 19.99, 'Country', 'stapelton.jpeg', (SELECT artist_id FROM artist WHERE last_name = 'Stapleton'));
 	
 INSERT INTO album(title, price, genre, img_url, artist_id)
-	VALUES('Man On The Moon: The End Of The Day', 14.59, 'Rap', 'cudi.jpeg', (SELECT artist_id FROM artist WHERE last_name = 'Cudi'));
+	VALUES('Kid Cudi: Man On The Moon: The End Of The Day', 14.59, 'Rap', 'cudi.jpeg', (SELECT artist_id FROM artist WHERE last_name = 'Cudi'));
 	
 INSERT INTO album(title, price, genre, img_url, artist_id)
-	VALUES('Donda', 29.18, 'Rap', 'west.jpeg', (SELECT artist_id FROM artist WHERE last_name = 'West'));
+	VALUES('Kayne West: Donda', 29.18, 'Rap', 'west.jpeg', (SELECT artist_id FROM artist WHERE last_name = 'West'));
 	
 INSERT INTO album(title, price, genre, img_url, artist_id)
-	VALUES('The White Album', 29.90, 'Rock', 'mac.jpeg', (SELECT artist_id FROM artist WHERE last_name = 'Mac'));
+	VALUES('Fleetwood Mac: The White Album', 29.90, 'Rock', 'mac.jpeg', (SELECT artist_id FROM artist WHERE last_name = 'Mac'));
 	
 INSERT INTO album(title, price, genre, img_url, artist_id)
-	VALUES('Ten', 10.89, 'Rock', 'jam.jpeg', (SELECT artist_id FROM artist WHERE last_name = 'Jam'));
+	VALUES('Pearl Jam: Ten', 10.89, 'Rock', 'jam.jpeg', (SELECT artist_id FROM artist WHERE last_name = 'Jam'));
 	
 INSERT INTO album(title, price, genre, img_url, artist_id)
-	VALUES('Greatest Hits', 16.89, 'Rap', 'biggie.jpeg', (SELECT artist_id FROM artist WHERE last_name = 'B.I.G.'));
+	VALUES('Notorious  B.I.G.: Greatest Hits', 16.89, 'Rap', 'biggie.jpeg', (SELECT artist_id FROM artist WHERE last_name = 'B.I.G.'));
 	

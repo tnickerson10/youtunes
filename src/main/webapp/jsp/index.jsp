@@ -67,9 +67,9 @@
 					
 					<div class="col">
 						<div class="shadow-md">
-							<img src="/youtunes6/images/<%=album.getImgUrl()%>" height="350" class="card-img-top" />
+							<img src="/youtunes6/images/<%=album.getImgUrl()%>" height="275" class="card-img-top " />
 
-							<div class="card-body bg-warning">
+							<div class="card-body rounded-3 shadow-md bg-warning">
 								<p class="card-text text-light">
 									
 									<span><%=album.getTitle()%></span>
