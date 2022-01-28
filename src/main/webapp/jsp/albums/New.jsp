@@ -37,7 +37,7 @@
 <jsp:include page="../TopNav.jsp" flush="true" />
 
 <div class="container py-5 width-35">
-	<h2>New Album Form</h2>
+	<h2 class="mt-4">New Album Form</h2>
 	<form id="albumForm">
 		<input type="hidden" name="action" value="createAlbum" />
 					

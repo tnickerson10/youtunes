@@ -39,7 +39,7 @@
 <body>
 <jsp:include page="../TopNav.jsp" flush="true" />
 
-<div class="container py-5 width-35">
+<div class="mt-5 container py-5 width-35">
 
 	<% 
 		try 
