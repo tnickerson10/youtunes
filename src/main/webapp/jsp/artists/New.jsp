@@ -18,7 +18,7 @@
 <jsp:include page="../TopNav.jsp" flush="true" />
 
 <div class="container py-5 width-35">
-	<h2>New Artist Form</h2>
+	<h2 class="mt-5">New Artist Form</h2>
 	<form>
 		<input type="hidden" name="action" value="createArtist" />
 					

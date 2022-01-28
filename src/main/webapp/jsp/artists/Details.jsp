@@ -23,7 +23,7 @@
 <jsp:include page="../TopNav.jsp" flush="true" />
 
 <div class="container py-5 width-35">
-	<h2>Artist Details</h2>
+	<h2 class="mt-5">Artist Details</h2>
 	
 	<% 
 		try 
