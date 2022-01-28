@@ -21,7 +21,7 @@
 			<div class="container">
 				<div class="d-sm-flex text-left align-items-center ml-3">
 					<div class="text-left">
-						<h1 class="fw-light">You<span class="text-warning">Tunes</span></h1>
+						<h1 class="fw-light pt-5">You<span class="text-warning">Tunes</span></h1>
 						<p class="text-muted">Who We Are</p>
 						<p>
 			        		YouTunes is a multi-platform web application that is one of the fastest-rising downloads in all of social media. 
