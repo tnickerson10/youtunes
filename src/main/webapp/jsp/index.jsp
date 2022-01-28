@@ -51,7 +51,7 @@
 
 		<div class="album py-5 bg-light">
 			<div class="container">
-			<h1 class="fw-medium text-dark text-left" >YOUR JAMS </h1>
+			<h1 class="fw-medium text-dark text-left" >Popular Music </h1>
 				<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 				
 					<%
@@ -87,6 +87,7 @@
 									<a href="https://open.spotify.com/" target="_blank"> <i class="pe-2 bi bi-play-circle-fill text-lg text-dark"></i></a>
 									<a href="https://open.spotify.com/" target="_blank"> <i class="pe-2 bi bi-cloud-download-fill text-lg text-dark"></i></a>
 									<a href="https://open.spotify.com/" target="_blank"> <i class="pe-2 bi bi-share-fill text-lg text-dark"></i></a>
+									
 									</p>
 								
 								

@@ -30,7 +30,7 @@
 		<br />
 		
 		<p class="text-center">
-			<a href="store?action=newArtist" class="btn btn-warning text-center text-dark w-50">Add New Artist</a>
+			<a href="store?action=newArtist" class="btn btn-warning text-center text-dark w-50">Add New Artist <i class="ps-2 bi bi-plus-circle text-lg text-dark"></i></a>
 		</p>
 		
 		
