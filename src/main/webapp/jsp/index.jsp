@@ -79,11 +79,16 @@
 
 							<div class="card-body rounded-3 shadow-md bg-warning">
 								<p class="card-text text-light">
-									<span><%=artist.getFirstName()%> <%=artist.getLastName()%>: </span>
+									<span><%=artist.getFirstName()%> <%=artist.getLastName()%>:</span>
 									<span><%=album.getTitle()%></span>
 									<br />
 									<small class="text-dark"><em><%=album.getGenre()%></em></small>
-								</p>
+									<p>
+									<a href="https://open.spotify.com/" target="_blank"> <i class="bi bi-play-circle-fill text-lg text-dark"></i></a>
+									<a href="https://open.spotify.com/" target="_blank"> <i class="bi bi-cloud-upload-fill text-lg text-dark"></i></a>
+									<a href="https://open.spotify.com/" target="_blank"> <i class="bi bi-share-fill text-lg text-dark"></i></a>
+									</p>
+								
 								
 								<div class="d-flex justify-content-between align-items-center">
 									<div class="btn-group">
