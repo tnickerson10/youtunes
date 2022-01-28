@@ -84,15 +84,15 @@
 									<br />
 									<small class="text-dark"><em><%=album.getGenre()%></em></small>
 									<p>
-									<a href="https://open.spotify.com/" target="_blank"> <i class="bi bi-play-circle-fill text-lg text-dark"></i></a>
-									<a href="https://open.spotify.com/" target="_blank"> <i class="bi bi-cloud-upload-fill text-lg text-dark"></i></a>
-									<a href="https://open.spotify.com/" target="_blank"> <i class="bi bi-share-fill text-lg text-dark"></i></a>
+									<a href="https://open.spotify.com/" target="_blank"> <i class="pe-2 bi bi-play-circle-fill text-lg text-dark"></i></a>
+									<a href="https://open.spotify.com/" target="_blank"> <i class="pe-2 bi bi-cloud-download-fill text-lg text-dark"></i></a>
+									<a href="https://open.spotify.com/" target="_blank"> <i class="pe-2 bi bi-share-fill text-lg text-dark"></i></a>
 									</p>
 								
 								
 								<div class="d-flex justify-content-between align-items-center">
 									<div class="btn-group">
-										<a href="store?action=albumDetails&albumId=<%=album.getAlbumId()%>" class="btn btn-sm btn-outline-secondary bg-light">Edit</a>
+										<a href="store?action=albumDetails&albumId=<%=album.getAlbumId()%>" class="btn btn-sm btn-outline-secondary text-dark bg-light">Edit</a>
 										<a href="store?action=deleteAlbum&albumId=<%=album.getAlbumId()%>" class="btn btn-sm btn-outline-secondary bg-dark">Delete</a>
 									</div>
 									<small class="text-dark">$<%=album.getPrice()%></small>
