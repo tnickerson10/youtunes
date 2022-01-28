@@ -26,7 +26,7 @@
 
 	<div class="py-5 container width-35">
 	
-		<h2 class="text-center">Artist List</h2>
+		<h2 class="text-center py-5">Artist List</h2>
 		<br />
 		
 		<p class="text-center">

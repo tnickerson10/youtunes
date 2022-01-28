@@ -1,21 +1,7 @@
 @charset "UTF-8";
 
-/* .width-35 
-{
-	width: 35%;
+@media(min-width: 768px) {
+	.news-email {
+		width: 50%
+	}
 }
-
-.icon-center 
-{
-	text-align: center;
-}
-
-.text-center 
-{
-	text-align: center;
-}
-
-.padding-top-50 
-{
-	padding-top: 50px;
-} */

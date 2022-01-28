@@ -2,7 +2,7 @@
 	pageEncoding="UTF-8"%>
 
 <header>
-	<nav class="navbar navbar-expand-lg bg-dark text-warning">
+	<nav class="navbar navbar-expand-lg bg-dark fixed-top">
 		<div class="container-fluid">
 			<a class="navbar-brand text-light px-5" href="store?action=showWelcome">You<span class="text-warning">Tunes</span></a>
 			<button class="navbar-toggler" type="button"

@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 
-<!-- Sprint 3 -->
 
 <%@page import="youtunes.model.Album"%>
 <%@page import="youtunes.model.Artist"%>
@@ -10,7 +9,7 @@
 <%@page import="java.util.Iterator"%>
 
 <jsp:useBean id="albumDao" scope="application" class="youtunes.service.impl.JdbcAlbumDao" />
-
+<jsp:useBean id="artistDao" scope="application" class="youtunes.service.impl.JdbcArtistDao" />
 
 
 <!DOCTYPE html>
@@ -25,6 +24,8 @@
 	rel="stylesheet"
 	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
 	crossorigin="anonymous">
+	
+<link rel="stylesheet" type="text/css" href="css/site.css">	
 </head>
 <body>
 	
@@ -55,13 +56,20 @@
 				
 					<%
 					
+					List<Artist> artists = artistDao.list(); 
+					Iterator<Artist> iterator = artists.iterator();
+					%>
+				
+					<%
+					
 						List<Album> albums = albumDao.list();
-						Iterator<Album> iterator = albums.iterator();
+						Iterator<Album> iterator2 = albums.iterator();
 						
 						
 						while (iterator.hasNext())
 						{
-							Album album = (Album)iterator.next();		
+							Artist artist = (Artist)iterator.next();
+							Album album = (Album)iterator2.next();		
 							
 					%>
 					
@@ -71,7 +79,7 @@
 
 							<div class="card-body rounded-3 shadow-md bg-warning">
 								<p class="card-text text-light">
-									
+									<span><%=artist.getFirstName()%> <%=artist.getLastName()%>: </span>
 									<span><%=album.getTitle()%></span>
 									<br />
 									<small class="text-dark"><em><%=album.getGenre()%></em></small>
@@ -91,6 +99,18 @@
 				</div>
 			</div>
 		</div>
+		<section class="bg-primary text-light p-3">
+			<div class="container">
+				<div class="d-md-flex justify-content-between align-items-center">
+					<h3 class="mb-3 mb-md-0">Get The Latest Artist News</h3>
+					<div class="input-group news-email">
+					  <input type="text" class="form-control" placeholder="Enter Email">
+					  <button class="btn btn-dark btn-lg" type="button">Sumbit</button>
+					</div>
+				</div>
+			</div>
+		
+		</section>
 	</main>
 
 	<!-- footer -->
