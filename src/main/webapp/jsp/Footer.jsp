@@ -7,6 +7,8 @@
     rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" 
     integrity="sha384-EvBWSlnoFgZlXJvpzS+MAUEjvN7+gcCwH+qh7GRFOGgZO0PuwOFro7qPOJnLfe7l" 
     crossorigin="anonymous">
+    
+    <link rel="stylesheet" type="text/css" href="css/site.css">	
 
 <% 
 	int year = Calendar.getInstance().get(Calendar.YEAR);
@@ -15,14 +17,14 @@
 <footer class="text-muted py-5 text-center text-warning bg-dark">
 	<div class="container">
 		<p class="float-end mb-1">
-			<a href="#"> <i class="bi bi-arrow-up-circle text-lg text-primary"></i></a>
+			<a href="#"> <i class="bi bi-chevron-double-up text-primary" style="font-size: 2rem"></i></a>
 		</p>
 		
-			<p class="px-3 d-inline ms-3">
-				<i class="bi bi-facebook"></i>
-				<i class="bi bi-instagram"></i>
-				<i class="bi bi-linkedin"></i>
-				<i class="bi bi-spotify"></i>
+			<p class="px-5 d-inline ms-5 ">
+				<i class="bi bi-facebook me-3" style="font-size: 1.5rem"></i>
+				<i class="bi bi-instagram me-3" style="font-size: 1.5rem"></i>
+				<i class="bi bi-linkedin me-3" style="font-size: 1.5rem"></i>
+				<i class="bi bi-spotify me-3" style="font-size: 1.5rem"></i>
 			</p>
 			<p class="px-3 d-inline">&copy; <%=year%> -  You<span class="text-warning">Tunes</span> </p>
 		

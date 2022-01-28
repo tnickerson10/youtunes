@@ -26,7 +26,7 @@
 						<p>
 			        		YouTunes is a multi-platform web application that is one of the fastest-rising downloads in all of social media. 
 			        		Multiple artists have turned to YouTunes as a platform for releasing their newest material with a complete artist-owned 
-			        		purchasing model. Users see YouTunes as the first stop to find out announcements, sampler tracks and build-your-own 
+			        		purchasing model. Users see YouTunes as the first stop to find out announcements, sample tracks and build-your-own 
 			        		music bundles for their favorite artists, that they can easily take with them on-the-go by storing those bundles in 
 			        		the cloud, or have them downloaded to their favorite device.
 			      		</p>
