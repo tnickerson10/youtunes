@@ -75,7 +75,7 @@ INSERT INTO album(title, price, genre, img_url, artist_id)
 	VALUES('Kayne West: Donda', 29.18, 'Rap', 'west.jpeg', (SELECT artist_id FROM artist WHERE last_name = 'West'));
 	
 INSERT INTO album(title, price, genre, img_url, artist_id)
-	VALUES('Fleetwood Mac: The White Album', 29.90, 'Rock', 'mac.jpeg', (SELECT artist_id FROM artist WHERE last_name = 'Mac'));
+	VALUES('Fleetwood Mac: The White Album', 29.97, 'Rock', 'mac.jpeg', (SELECT artist_id FROM artist WHERE last_name = 'Mac'));
 	
 INSERT INTO album(title, price, genre, img_url, artist_id)
 	VALUES('Pearl Jam: Ten', 10.89, 'Rock', 'jam.jpeg', (SELECT artist_id FROM artist WHERE last_name = 'Jam'));
