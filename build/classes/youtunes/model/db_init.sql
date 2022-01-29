@@ -66,7 +66,7 @@ INSERT INTO artist(first_name, last_name)
 	
 -- insert album statements
 INSERT INTO album(title, price, genre, img_url, artist_id)
-	VALUES('Chris Stapleton: Traveller', 19.99, 'Country', 'stapelton.jpeg', (SELECT artist_id FROM artist WHERE last_name = 'Stapleton'));
+	VALUES('Chris Stapleton: Traveller', 19.99, 'Country', 'stapleton.jpeg', (SELECT artist_id FROM artist WHERE last_name = 'Stapleton'));
 	
 INSERT INTO album(title, price, genre, img_url, artist_id)
 	VALUES('Kid Cudi: Man On The Moon: The End Of The Day', 14.59, 'Rap', 'cudi.jpeg', (SELECT artist_id FROM artist WHERE last_name = 'Cudi'));
