@@ -1,6 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-
+<!-- 
+	Travis Nickerson
+	CSD 460 
+	January 25th, 2022
+	Capstone 1 YouTunes
+ -->
 <!-- JAVA PAGE IMPORTS -->
 <%@page import="youtunes.model.Album"%>
 <%@page import="youtunes.model.Artist"%>
