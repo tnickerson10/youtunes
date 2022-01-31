@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="css/site.css">	
 
 <% 
+// CREATES A CURRENT YEAR INSTANCE
 	int year = Calendar.getInstance().get(Calendar.YEAR);
 	
 %>
@@ -20,6 +21,7 @@
 			<a href="#"> <i class="bi bi-chevron-double-up text-primary" style="font-size: 2rem"></i></a>
 		</p>
 		
+			<!-- SOCIAL ICONS -->
 			<p class="px-5 d-inline ms-5 ">
 				<i class="bi bi-facebook me-3" style="font-size: 1.5rem"></i>
 				<i class="bi bi-instagram me-3" style="font-size: 1.5rem"></i>

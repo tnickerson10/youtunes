@@ -1,11 +1,13 @@
 package youtunes.model;
 
+// CREATES OUR ARTIST CLASS
 public class Artist 
 {
 	private long artistId; 
 	private String firstName;
 	private String lastName;
 	
+	// ARTIST CONSTRUCTORS
 	public Artist(long artistId, String firstName, String lastName)
 	{
 		this.artistId = artistId; 
@@ -21,6 +23,7 @@ public class Artist
 	
 	public Artist() {}
 	
+	// GETTERS AND SETTERS FOR ARTIST CLASS
 	public void setAritstId(long artistId) 
 	{
 		this.artistId = artistId; 

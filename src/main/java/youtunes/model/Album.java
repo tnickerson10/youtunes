@@ -1,6 +1,6 @@
 package youtunes.model;
 
-
+// CREATES OUR ALBUM CLASS
 public class Album 
 {
 	private long albumId; 
@@ -10,6 +10,7 @@ public class Album
 	private String imgUrl; 
 	private long artistId;
 	
+	// ALBUM CONSTRUCTORS
 	public Album(long albumId, String title, double price, String imgUrl, String genre, long artistId)
 	{
 		this.albumId = albumId;
@@ -31,6 +32,7 @@ public class Album
 	
 	public Album() {}
 	
+	// GETTERS AND SETTERS FOR OUR ALBUM CLASS
 	public void setAlbumId(long albumId) 
 	{
 		this.albumId = albumId;
@@ -91,6 +93,7 @@ public class Album
 		return artistId;
 	}
 	
+	// STRING OVERRIDE METHOD
 	@Override
 	public String toString() 
 	{

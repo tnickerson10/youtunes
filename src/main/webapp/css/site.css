@@ -1,11 +1,9 @@
 @charset "UTF-8";
 
+
 @media(min-width: 768px) {
 	.news-email {
 		width: 50%
 	}
 }
 
-#top-page-icon {
-	font-size: 50px !important;
-}

@@ -10,11 +10,14 @@
 	rel="stylesheet"
 	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
 	crossorigin="anonymous">
-	
+
+<!-- CSS IMPORT -->
 <link rel="stylesheet" href="/youtunes/css/site.css" type="text/css" />
 
 </head>
 <body>
+
+<!-- INCLUDES NAVBAR WITH JSP -->
 <jsp:include page="TopNav.jsp" flush="true" />
 
 <section class="p-5 text-center text-light bg-dark" >
@@ -43,6 +46,7 @@
 
 
 
+<!-- INCLUDES FOOTER WITH JSP -->
 
 <jsp:include page="Footer.jsp" flush="true" />
 

@@ -18,17 +18,22 @@
     integrity="sha384-EvBWSlnoFgZlXJvpzS+MAUEjvN7+gcCwH+qh7GRFOGgZO0PuwOFro7qPOJnLfe7l" 
     crossorigin="anonymous">
     
+<!-- CSS IMPORT -->
 <link rel="stylesheet" href="/youtunes/css/site.css" type="text/css" />
     
 </head>
     
 </head>
 <body>
+
+<!-- INCLUDES NAVBAR WITH JSP -->
 <jsp:include page="TopNav.jsp" flush="true" />
 
 <section class="p-5 text-left text-light bg-dark" >
 			<div class="container">
 				<div class="d-sm-flex align-items-bottom ">
+					
+					<!-- CONTACT CARD -->
 					<div class="shadow-lg mt-5 mb-5 bg-dark rounded w-75">
 						<h1 class="ms-3 mb-5 fw-light pt-4 text-lg">Contact <span class="text-warning">Us</span></h1>
 						<i class="ms-3 bi bi-telephone-forward-fill text-lg text-warning pt-5"> Phone</i>
@@ -47,6 +52,7 @@
 						
 						
 					</div>
+						<!-- SVG IMG -->
 						<img alt="" src="/youtunes6/images/contact.svg" class="img-fluid w-50 ms-5 pt-5"/>
 					
 					
@@ -55,6 +61,7 @@
 		</section>
 
 
+<!-- INCLUDES FOOTER WITH JSP -->
 
 <jsp:include page="Footer.jsp" flush="true" />
 

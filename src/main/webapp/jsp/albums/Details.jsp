@@ -1,12 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
+<!-- JAVA IMPORTS -->
 <%@page import="java.util.List"%>
 <%@page import="java.util.Iterator"%>
 <%@page import="youtunes.model.Artist"%>
     
 <%@page import="youtunes.model.Album" %>
 
+<!-- USES JAVA BEANS FROM jbdcAlbumDao and jbdcArtistDao -->
 <jsp:useBean id="albumDao" scope="application" class="youtunes.service.impl.JdbcAlbumDao" />
 <jsp:useBean id="artistDao" scope="application" class="youtunes.service.impl.JdbcArtistDao" />
 
@@ -23,6 +25,7 @@
 	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
 	crossorigin="anonymous">
 	
+<!-- CSS IMPORT -->	
 <link rel="stylesheet" href="/youtunes/css/site.css" type="text/css" />
 
 <style>
@@ -37,6 +40,8 @@
 
 </head>
 <body>
+
+<!-- INCLUDES NAVBAR INTO PAGE -->
 <jsp:include page="../TopNav.jsp" flush="true" />
 
 <div class="mt-5 container py-5 width-35">
@@ -44,10 +49,12 @@
 	<% 
 		try 
 		{
+			// GRABS albumID
 			String albumId = request.getParameter("albumId");
 			Album album = albumDao.find(Long.parseLong(albumId));
 			System.out.println(album.toString());
 			
+			// CREATES FORM THAT DISPLAYS ALBUM DETAILS
 			if (album != null) {
 			%>
 				<form id="albumForm">
@@ -75,6 +82,7 @@
 							<option value="0">--Select--</option>
 							<% System.out.println("Selected Genre: " + album.getGenre()); %>
 							
+							<!-- DROPDOWN GENRES MENU -->
 							<option value="Classical" <% if (album.getGenre().equals("Classical")) { %> selected <% } %> >Classical</option>
 							<option value="Jazz" <% if (album.getGenre().equals("Jazz")) { %> selected <% } %> >Jazz</option>
 							<option value="Blues" <% if (album.getGenre().equals("Blues")) { %> selected <% } %> >Blues</option>
@@ -97,10 +105,12 @@
 							<option value="0" selected>--Select--</option>
 							
 							<%
+								// CREATES NEW ARTIST LIST AND ITERATOR
 								List<Artist> artists = artistDao.list();
 								Iterator<Artist> iterator = artists.iterator();
 								while (iterator.hasNext())
 								{
+									// CREATES NEW ARTIST INSTANCE TO ITERATE OVER IN DB
 									Artist artist = (Artist)iterator.next();
 								
 							%>

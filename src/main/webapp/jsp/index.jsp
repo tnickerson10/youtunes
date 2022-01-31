@@ -1,13 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 
-
+<!-- JAVA PAGE IMPORTS -->
 <%@page import="youtunes.model.Album"%>
 <%@page import="youtunes.model.Artist"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="java.util.List"%>
 <%@page import="java.util.Iterator"%>
 
+<!-- JAVA BEANS FOR jbdcAlbumDao and jbdc ArtistDao -->
 <jsp:useBean id="albumDao" scope="application" class="youtunes.service.impl.JdbcAlbumDao" />
 <jsp:useBean id="artistDao" scope="application" class="youtunes.service.impl.JdbcArtistDao" />
 
@@ -24,11 +25,13 @@
 	rel="stylesheet"
 	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
 	crossorigin="anonymous">
-	
+
+<!-- CSS IMPORT -->	
 <link rel="stylesheet" type="text/css" href="css/site.css">	
 </head>
 <body>
 	
+	<!-- INCLUDES NAVBAR WITH JSP -->
 	<jsp:include page="TopNav.jsp" flush="true" />
 	
 	<main>
@@ -42,6 +45,8 @@
 						<a href="store?action=newAlbum" class="btn btn-primary my-2">Add An Album</a>
 						
 					</div>
+					
+						<!-- SVG IMG -->
 						<img alt="" src="/youtunes6/images/music-hero.svg" class="img-fluid w-50 ms-5"/>
 					
 					
@@ -56,16 +61,18 @@
 				
 					<%
 					
+					// CREATES A NEW ARTIST LIST TO HOLD CURRENT ARTIST IN DB AND ITERATOR
 					List<Artist> artists = artistDao.list(); 
 					Iterator<Artist> iterator = artists.iterator();
 					%>
 				
 					<%
 					
+						// CREATES A NEW ALBUM LIST TO HOLD ALBUMS IN DB AND ITERATOR
 						List<Album> albums = albumDao.list();
 						Iterator<Album> iterator2 = albums.iterator();
 						
-						
+						// ITERATOR THROUGH THE ALBUM AND ARTIST LISTS
 						while (iterator.hasNext())
 						{
 							Artist artist = (Artist)iterator.next();
@@ -73,6 +80,7 @@
 							
 					%>
 					
+					<!-- ALBUM CARDS -->
 					<div class="col">
 						<div class="shadow-md">
 							<img src="/youtunes6/images/<%=album.getImgUrl()%>" height="275" class="card-img-top " />
@@ -105,6 +113,8 @@
 				</div>
 			</div>
 		</div>
+		
+		<!--  ARTIST NEWS SUBSCRIPTION -->
 		<section class="bg-primary text-light p-3">
 			<div class="container">
 				<div class="d-md-flex justify-content-between align-items-center">
@@ -122,7 +132,7 @@
 	<!-- footer -->
 	<jsp:include page="Footer.jsp" flush="true" />
 	
-	
+	<!-- script footer -->
 	<jsp:include page="ScriptFooter.jsp" flush="true" />
 </body>
 </html>

@@ -1,27 +1,27 @@
 
 
--- drop test user if exists 
+-- DROPS USER 
 DROP USER IF EXISTS 'youtunes_user'@'localhost';
 
 
--- create youtunes_user and grant them all privileges to the youtunes database 
+-- CREATES youtunes_user 
 CREATE USER 'youtunes_user'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root';
 
 
--- grant all privileges to the youtunes database to user youtunes_user on localhost 
+-- GRANTS ALL PRIVELAGES TO youtunes DATABASE
 GRANT ALL PRIVILEGES ON youtunes.* TO'youtunes_user'@'localhost';
 
 
--- Drop the foreign key
+-- DROP FK
 ALTER TABLE album DROP FOREIGN KEY fk_artist;
 
 
--- drop tables if they are present
+-- DROPS TABLES IF THEY EXIST
 DROP TABLE IF EXISTS artist; 
 DROP TABLE IF EXISTS album; 
 
 
--- create artist table 
+-- CREATES ARTIST TABLE 
 CREATE TABLE artist (
 	artist_id 		INT 			NOT NULL		AUTO_INCREMENT,
 	first_name		VARCHAR(75)		NOT NULL,
@@ -29,7 +29,7 @@ CREATE TABLE artist (
 	PRIMARY KEY(artist_id)
 );
 
--- create album table 
+-- CREATES ALBUM TABLE 
 CREATE TABLE album (
 	album_id		INT 			NOT NULL 		AUTO_INCREMENT,
 	title			VARCHAR(150)	NOT NULL,
@@ -44,7 +44,7 @@ CREATE TABLE album (
 ); 
 
 
--- insert artist statements 
+-- INSERT ARTIST STATEMENTS
 INSERT INTO artist(first_name, last_name)
 	VALUES('Chris', 'Stapleton');
 
@@ -64,7 +64,7 @@ INSERT INTO artist(first_name, last_name)
 	VALUES('Notorious', 'B.I.G.');
 	
 	
--- insert album statements
+-- INSERT ALBUM STATEMENTS
 INSERT INTO album(title, price, genre, img_url, artist_id)
 	VALUES('Chris Stapleton: Traveller', 19.99, 'Country', 'stapleton.jpeg', (SELECT artist_id FROM artist WHERE last_name = 'Stapleton'));
 	
